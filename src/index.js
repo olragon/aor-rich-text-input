@@ -30,11 +30,11 @@ class RichTextInput extends Component {
         this.quill = null;
     }
 
-    onTextChange = () => {
+    onTextChange() {
         this.props.input.onChange(this.editor.innerHTML);
     }
 
-    updateDivRef = ref => {
+    updateDivRef(ref) {
         this.divRef = ref;
     }
 
